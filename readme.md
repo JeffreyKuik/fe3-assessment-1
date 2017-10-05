@@ -2,7 +2,7 @@
 
 ### BACKGROUND
 This is the first assignment for the course Frontend Development 3.
-The data in this assignment is about languages listed as having 50 million or more speakers. Original data is from ['wikipedia.org'](https://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers).
+The data in this assignment is about languages listed as having 50 million or more speakers. Original data is from [wikipedia.org](https://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers).
 
 ### DATA
 In this chart you can find the visualised data of the languages who have 50 million or more speakers.
