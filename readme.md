@@ -16,7 +16,7 @@ What have I done in this assessment?
 * Made separate JS, CSS and HTML files
 * Made the code semantic
 * Changed the code to my own coding style
-* Edited the scale for a better vieuw of the graph
+* Edited the scale for a better view of the graph
 * Rotated the text in the x axis
 * Edited the CSS
 * Add a title to the HTML file
