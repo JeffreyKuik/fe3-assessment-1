@@ -10,6 +10,17 @@ In this chart you can find the visualised data of the languages who have 50 mill
 * Each column on the x-axis represents the name of the language.
 * Each column on the y-axis represents the estimaded number of total speakers.
 
+### PROGRESS
+What have I done in this assessment?
+* Tried to understand the code
+* Made separate JS, CSS and HTML files
+* Made the code semantic
+* Changed the code to my own coding style
+* Edited the scale for a better vieuw of the graph
+* Rotated the text in the x axis
+* Edited the CSS
+* Add a title to the HTML file
+
 ### FEATURES
 * [d3.tsv](https://github.com/d3/d3-request#tsv)
 * [d3.select](https://github.com/d3/d3-selection#select)
