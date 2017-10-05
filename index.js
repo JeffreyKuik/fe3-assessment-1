@@ -18,19 +18,24 @@ var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
 var g = svg.append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+//Roept de data op uit data.tsv
 d3.tsv("data.tsv", function (d) {
     d.speakers = +d.speakers;
     return d;
 }, function (error, data) {
     if (error) throw error;
 
+    //x axis wordt gehaald uit de language kolom
     x.domain(data.map(function (d) {
         return d.language;
     }));
+    
+    //y axis wordt gehaald uit de speakers kolom
     y.domain([0, d3.max(data, function (d) {
         return d.speakers;
     })]);
 
+    //Dit is de x axis
     g.append("g")
         .attr("class", "axis axis--x")
         .attr("transform", "translate(0," + height + ")")
@@ -44,6 +49,7 @@ d3.tsv("data.tsv", function (d) {
         .attr("dy", "0em")
         .attr("transform", "rotate(-65)");
 
+    //Dit is de y axis
     g.append("g")
         .attr("class", "axis axis--y")
         .call(d3.axisLeft(y).ticks(10))
@@ -54,6 +60,7 @@ d3.tsv("data.tsv", function (d) {
         .attr("text-anchor", "end")
         .text("Speakers");
 
+    //Dit is de grafiek (bars)
     g.selectAll(".bar")
         .data(data)
         .enter().append("rect")
