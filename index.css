@@ -1,0 +1,11 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.bar {
+    fill: #c70039;
+}
+
+.bar:hover {
+    fill: #ff5733;
+}
